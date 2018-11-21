@@ -475,7 +475,7 @@ footer > img {
 
     .sec1 {
         grid-column: 1 / 12;
-        grid-row: 3 / 18;
+        grid-row: 3 / 19;
         padding: 10px;
     }
 
@@ -490,13 +490,13 @@ footer > img {
 
     .sec4 {
         grid-column: 1 / 12;
-        grid-row: 18 / 22;
+        grid-row: 19 / 23;
         padding: 15px;
     }
 
     .sec5 {
         grid-column: 1 / 12;
-        grid-row: 22 / 24;
+        grid-row: 23 / 26;
         padding: 15px;
     }
 
@@ -512,35 +512,35 @@ footer > img {
 
     .vietnam {
         grid-column: 1 / 12;
-        grid-row: 4 / 8;
+        grid-row: 4 / 9;
     }
 
 
     .srilankabillede {
         grid-column: 1 / 12;
-        grid-row: 8 / 11;
+        grid-row: 9 / 12;
     }
 
     .srilanka {
         grid-column: 1 / 12;
-        grid-row: 11 / 16; 
+        grid-row: 12 / 17; 
     }
 
     .sahara {
         grid-column: 1 / 12;
-        grid-row: 16 / 19;
+        grid-row: 17 / 20;
     }
 
 
 
     .marokko {
         grid-column: 1 / 12;
-        grid-row: 19 / 22;
+        grid-row: 20 / 24;
     }
 
     .jordan {
         grid-column: 1 / 12;
-        grid-row: 22 / 26;
+        grid-row: 24 / 29;
     }
 
     .vietsec1 {
