@@ -365,7 +365,7 @@ footer > img {
 
     .indexheader {
         display: block;
-        height: 90vh;
+        height: 100vh;
     }
 
     .undersideheader {
@@ -419,7 +419,7 @@ footer > img {
 
     .nav.responsive {
         position: relative;
-        height: 90vh;
+        height: 100vh;
         background-color: #EAEEEF;
         opacity: .7;
     }
@@ -615,7 +615,7 @@ footer > img {
     
     .indexheader {
         display: block;
-        height: 90vh;
+        height: 100vh;
     }
 
     .undersideheader {
@@ -668,7 +668,7 @@ footer > img {
 
     .nav.responsive {
         position: relative;
-        height: 90vh;
+        height: 100vh;
         background-color: #EAEEEF;
         opacity: .7;
     }
