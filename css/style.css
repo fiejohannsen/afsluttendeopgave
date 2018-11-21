@@ -1,0 +1,856 @@
+* {
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+
+.indexheader {
+    background-image: url(../images/bigphoto.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.undersideheader {
+    background-color: #EAEEEF;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-right: 250px;
+
+}
+
+h1 {
+    text-align: center;
+    line-height: 1em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 75px;
+    text-shadow: 0px 0px 25px 25px #000;
+    padding-top: 40px;
+    margin-top: 200px;
+    opacity: .6;
+
+}
+
+/*STYLING TIL NAVIGATIONSBAR*/
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    padding: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    justify-content: center;
+    font-family: "poppins", sans-serif;
+    letter-spacing: 2px;
+
+}
+
+/*STYLING TIL DROPDOWN*/
+.dropdown {
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dropdown .dropknap {
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    padding: 25px;
+    background-color: inherit;
+    font-family: "poppins", sans-serif;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 270px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+
+.nav a:hover,
+.dropdown:hover .dropknap {
+    color: #333;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*ICONER TIL RESPONSIV NAVIGATIONSBAR (MOBIL+TABLET)*/
+.nav .icon {
+    display: none;
+    padding: 10px;
+}
+
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+
+}
+
+.sec1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 18;
+}
+
+.sec2 {
+    grid-column: 6 / 12;
+    grid-row: 1 / 11;
+}
+
+.sec2 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec3 {
+    grid-column: 6 / 8;
+    grid-row: 11 / 15;
+}
+
+.sec3 > img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec4 {
+    grid-column: 8 / 12;
+    grid-row: 11 / 15;
+    padding: 15px;
+    background-color: #E3E4D6;
+}
+
+.sec5 {
+    grid-column: 6 / 10;
+    grid-row: 15 / 18;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: #FAEBE3;
+}
+
+.sec6 {
+    grid-column: 10 / 12;
+    grid-row: 15 / 18;
+}
+
+.sec6 > img {
+    height: 100%;
+    width: 100%;
+}
+
+.vietnam {
+    grid-column: 1 / 4;
+    grid-row: 1 / 8;
+    padding: 10px;
+    background-color: #E7E8DB;
+}
+
+.vietnambillede {
+    grid-column: 1 / 4;
+    grid-row: 8 / 11;
+}
+
+.vietnambillede > img {
+    height: 100%;
+    width: 100%;
+}
+
+.srilankabillede {
+    grid-column: 4 / 12;
+    grid-row: 1 / 6;
+}
+
+.srilankabillede > img {
+    height: 100%;
+    width: 100%;
+}
+
+.srilanka {
+    grid-column: 4 / 12;
+    grid-row: 6 / 11;
+    padding: 10px;
+    background-color: #747935;
+
+
+}
+
+.sahara {
+    grid-column: 1 / 9;
+    grid-row: 11 / 15;
+}
+
+.sahara > img {
+    height: 100%;
+    width: 100%;
+}
+
+.marokko {
+    grid-column: 1 / 9;
+    grid-row: 15 / 18;
+    padding: 10px;
+    background-color: #F5F5F0;
+}
+
+.jordan {
+    grid-column: 9 / 12;
+    grid-row: 11 / 18;
+    padding: 10px;
+    background-color: #F7E1D5;
+}
+
+
+.vietsec1 {
+    grid-column: 1 / 12;
+    grid-row: 1 / 7;
+}
+
+.vietsec1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.vietsec2 {
+    grid-column: 1 / 6;
+    grid-row: 7 / 19;
+    padding: 15px;
+
+}
+
+.vietsec3 {
+    grid-column: 6 / 12;
+    grid-row: 7 / 19;
+
+    padding: 15px;
+    background-color: #E1E2D4;
+
+}
+
+.srisec1 {
+    grid-column: 1 / 12;
+    grid-row: 1 / 7;
+}
+
+.srisec1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.srisec2 {
+    grid-column: 1 / 6;
+    grid-row: 7 / 18;
+
+    padding: 15px;
+}
+
+.srisec3 {
+    grid-column: 6 / 12;
+    grid-row: 7 / 18;
+    padding: 15px;
+    background-color: #E1E2D4;
+}
+
+.marokkosec1 {
+    grid-column: 1 / 12;
+    grid-row: 1 / 7;
+}
+
+.marokkosec1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.marokkosec2 {
+    grid-column: 1 / 6;
+    grid-row: 7 / 18;
+
+    padding: 15px;
+}
+
+.marokkosec3 {
+    grid-column: 6 / 12;
+    grid-row: 7 / 18;
+    padding: 15px;
+    background-color: #E1E2D4;
+}
+
+.jordansec1 {
+    grid-column: 1 / 12;
+    grid-row: 1 / 7;
+}
+
+.jordansec1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.jordansec2 {
+    grid-column: 1 / 6;
+    grid-row: 7 / 18;
+
+    padding: 15px;
+}
+
+.jordansec3 {
+    grid-column: 6 / 12;
+    grid-row: 7 / 18;
+    padding: 15px;
+    background-color: #E1E2D4;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+footer > img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/*MEDIA-QUERY TIL NAVIGATIONSBAR TIL MOBILSTØRRELSE OG TABLET*/
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    .indexheader {
+        display: block;
+        height: 90vh;
+    }
+
+    .undersideheader {
+        display: block;
+        height: 13vh;
+    }
+
+    .overskrift {
+        background-color: #33767F;
+        opacity: .7;
+        padding-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 0px;
+
+    }
+
+
+    .nav a:not(:first-child),
+    .dropdown .dropknap {
+        display: none;
+        color: black;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        color: white;
+
+    }
+
+    .nav {
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        padding: 0px;
+    }
+
+    .nav a {
+        padding: 0px;
+    }
+
+    .nav.responsive {
+        position: relative;
+        height: 90vh;
+        background-color: #EAEEEF;
+        opacity: .7;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav.responsive .dropdown {
+        float: none;
+    }
+
+    .nav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .nav.responsive .dropdown .dropknap {
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown .dropknap {
+        padding: 10px;
+        background-color: #EAEEEF;
+        font-family: "poppins", sans-serif;
+        margin: 0 auto;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo {
+        margin: 17px;
+        width: 25%;
+    }
+
+
+    main {
+        padding: 0px;
+        grid-gap: 0px;
+        font-size: 13px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 75px;
+    }
+
+    .sec1 {
+        grid-column: 1 / 12;
+        grid-row: 3 / 18;
+        padding: 10px;
+    }
+
+    .sec2 {
+        display: none;
+    }
+
+    .sec3 {
+        display: none;
+    }
+
+
+    .sec4 {
+        grid-column: 1 / 12;
+        grid-row: 18 / 22;
+        padding: 15px;
+    }
+
+    .sec5 {
+        grid-column: 1 / 12;
+        grid-row: 22 / 24;
+        padding: 15px;
+    }
+
+    .sec6 {
+        display: none;
+    }
+
+
+    .vietnambillede {
+        grid-column: 1 / 12;
+        grid-row: 1 / 4;
+    }
+
+    .vietnam {
+        grid-column: 1 / 12;
+        grid-row: 4 / 8;
+    }
+
+
+    .srilankabillede {
+        grid-column: 1 / 12;
+        grid-row: 8 / 11;
+    }
+
+    .srilanka {
+        grid-column: 1 / 12;
+        grid-row: 11 / 16; 
+    }
+
+    .sahara {
+        grid-column: 1 / 12;
+        grid-row: 16 / 19;
+    }
+
+
+
+    .marokko {
+        grid-column: 1 / 12;
+        grid-row: 19 / 22;
+    }
+
+    .jordan {
+        grid-column: 1 / 12;
+        grid-row: 22 / 26;
+    }
+
+    .vietsec1 {
+        grid-column: 1 / 12;
+        grid-row: 1 / 4;
+    }
+
+    .vietsec2 {
+        grid-column: 1 / 12;
+        grid-row: 4 / 13;
+    }
+
+    .vietsec3 {
+        grid-column: 1 / 12;
+        grid-row: 13 / 24;
+
+    }
+
+    .srisec1 {
+        grid-column: 1 / 12;
+        grid-row: 1 / 5;
+    }
+
+
+    .srisec2 {
+        grid-column: 1 / 12;
+        grid-row: 5 / 14;
+    }
+
+    .srisec3 {
+        grid-column: 1 / 12;
+        grid-row: 14 / 24;
+    }
+
+    .marokkosec1 {
+        grid-column: 1 / 12;
+        grid-row: 1 / 4;
+    }
+
+    .marokkosec2 {
+        grid-column: 1 / 12;
+        grid-row: 4 / 14;
+    }
+
+    .marokkosec3 {
+        grid-column: 1 / 12;
+        grid-row: 14 / 24;
+    }
+
+    .jordansec1 {
+        grid-column: 1 / 12;
+        grid-row: 1 / 4;
+    }
+
+    .jordansec2 {
+        grid-column: 1 / 12;
+        grid-row: 4 / 13;
+    }
+
+    .jordansec3 {
+        grid-column: 1 / 12;
+        grid-row: 13 / 23;
+    }
+
+
+}
+
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+    
+    .indexheader {
+        display: block;
+        height: 90vh;
+    }
+
+    .undersideheader {
+        display: block;
+        height: 13vh;
+    }
+
+    .overskrift {
+        background-color: #33767F;
+        opacity: .7;
+        padding-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 35px;
+        margin: 0px;
+    }
+
+
+    .nav a:not(:first-child),
+    .dropdown .dropknap {
+        display: none;
+        color: black;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        color: white;
+
+    }
+
+    .nav {
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        padding: 0px;
+    }
+
+    .nav a {
+        padding: 0px;
+    }
+
+    .nav.responsive {
+        position: relative;
+        height: 90vh;
+        background-color: #EAEEEF;
+        opacity: .7;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav.responsive .dropdown {
+        float: none;
+    }
+
+    .nav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .nav.responsive .dropdown .dropknap {
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown .dropknap {
+        padding: 10px;
+        background-color: #EAEEEF;
+        font-family: "poppins", sans-serif;
+        margin: 0 auto;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo {
+        margin: 17px;
+        width: 15%;
+    }
+
+
+    main {
+        padding: 10px;
+        grid-gap: 0px;
+        font-size: 13px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 75px;
+    }
+
+    .sec1 {
+        grid-column: 1 / 5;
+        grid-row: 3 / 17;
+        padding: 10px;
+    }
+
+    .sec2 {
+        grid-column: 5 / 12;
+        grid-row: 4 / 13;
+    }
+    
+    .sec3 {
+        display: none;
+    }
+
+
+    .sec4 {
+        grid-column: 5 / 12;
+        grid-row: 13 / 17;
+        padding: 15px;
+    }
+
+    .sec5 {
+        grid-column: 1 / 12;
+        grid-row: 17 / 19;
+        padding: 15px;
+    }
+
+    .sec6 {
+        display: none;
+    }
+
+
+    .vietnambillede {
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+    }
+
+    .vietnam {
+        grid-column: 1 / 4;
+        grid-row: 4 / 9;
+    }
+
+
+    .srilankabillede {
+        grid-column: 4 / 12;
+        grid-row: 5 / 9;
+    }
+
+    .srilanka {
+        grid-column: 4 / 12;
+        grid-row: 1 / 5; 
+    }
+
+    .sahara {
+        grid-column: 1 / 5;
+        grid-row: 9 / 12;
+    }
+
+    .marokko {
+        grid-column: 5 / 12;
+        grid-row: 9 / 12;
+    }
+
+    .jordan {
+        grid-column: 1 / 12;
+        grid-row: 12 / 15;
+    }
+
+    .vietsec1 {
+        grid-column: 1 / 7;
+        grid-row: 1 / 5;
+    }
+
+    .vietsec2 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 13;
+    }
+
+    .vietsec3 {
+        grid-column: 7 / 12;
+        grid-row: 1 / 13;
+
+    }
+
+    .srisec1 {
+        grid-column: 1 / 7;
+        grid-row: 1 / 5;
+    }
+
+
+    .srisec2 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 12;
+    }
+
+    .srisec3 {
+        grid-column: 7 / 12;
+        grid-row: 1 / 12;
+    }
+
+    .marokkosec1 {
+        grid-column: 1 / 7;
+        grid-row: 1 / 5;
+    }
+
+    .marokkosec2 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 12;
+    }
+
+    .marokkosec3 {
+        grid-column: 7 / 12;
+        grid-row: 1 / 12;
+    }
+
+    .jordansec1 {
+        grid-column: 1 / 7;
+        grid-row: 1 / 5;
+    }
+
+    .jordansec2 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 12;
+    }
+
+    .jordansec3 {
+        grid-column: 7 / 12;
+        grid-row: 1 / 12;
+    }
+    
+}
